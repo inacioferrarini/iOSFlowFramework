@@ -1,0 +1,5 @@
+author: Inácio Ferrarini
+module: Flow
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-project, 'Flow.xcodeproj', -scheme, 'Flow']
