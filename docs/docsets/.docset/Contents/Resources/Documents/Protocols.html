@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Coordinator.html">Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Instantiable.html">Instantiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Module.html">Module</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Storyboarded.html">Storyboarded</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ViewCodedViewController.html">ViewCodedViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/XibedView.html">XibedView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/XibedViewController.html">XibedViewController</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Flow11CoordinatorP"></a>
+                    <a name="//apple_ref/swift/Protocol/Coordinator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Flow11CoordinatorP">Coordinator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines a contract that every <code>Coordinator</code> must abide.</p>
+
+<p>Essentially, a <code>Coordinator</code> is responsible to orchestrate
+a navigation flow between different ViewControllers in order
+to complete a given task.</p>
+
+<p>A <code>Coordinator</code> can be composed of other <code>Coordinators</code>.
+In this context, they will be called <code>SubCoordinators</code>.</p>
+
+                        <a href="Protocols/Coordinator.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Coordinator</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Flow12InstantiableP"></a>
+                    <a name="//apple_ref/swift/Protocol/Instantiable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Flow12InstantiableP">Instantiable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Markup protocol used to designate that the object intentionally is capable to handle properly its own instantiation.</p>
+
+                        <a href="Protocols/Instantiable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Instantiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Flow12StoryboardedP"></a>
+                    <a name="//apple_ref/swift/Protocol/Storyboarded" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Flow12StoryboardedP">Storyboarded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Markup protocol used to designate that the object intentionally is capable to handle properly its own instantiation.</p>
+
+<p>Note that this object differs from the regular <code><a href="Protocols/Instantiable.html">Instantiable</a></code> since it aims to mark Storyboard-based <code>View</code>.</p>
+
+                        <a href="Protocols/Storyboarded.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Storyboarded</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Instantiable.html">Instantiable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Flow09ViewCodedB10ControllerP"></a>
+                    <a name="//apple_ref/swift/Protocol/ViewCodedViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Flow09ViewCodedB10ControllerP">ViewCodedViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Markup protocol used to designate that the object intentionally is capable to handle properly its own instantiation.</p>
+
+<p>Note that this object differs from the regular <code><a href="Protocols/Instantiable.html">Instantiable</a></code> since it aims to mark ViewCode-based <code>ViewController</code>.</p>
+
+                        <a href="Protocols/ViewCodedViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ViewCodedViewController</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Instantiable.html">Instantiable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Flow9XibedViewP"></a>
+                    <a name="//apple_ref/swift/Protocol/XibedView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Flow9XibedViewP">XibedView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Markup protocol used to designate that the object intentionally is capable to handle properly its own instantiation.</p>
+
+<p>Note that this object differs from the regular <code><a href="Protocols/Instantiable.html">Instantiable</a></code> since it aims to mark Xib-based <code>View</code>.</p>
+
+                        <a href="Protocols/XibedView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">XibedView</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Instantiable.html">Instantiable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Flow19XibedViewControllerP"></a>
+                    <a name="//apple_ref/swift/Protocol/XibedViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Flow19XibedViewControllerP">XibedViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Markup protocol used to designate that the object intentionally is capable to handle properly its own instantiation.</p>
+
+<p>Note that this object differs from the regular <code><a href="Protocols/Instantiable.html">Instantiable</a></code> since it aims to mark Xib-based <code>ViewControllers</code>.</p>
+
+                        <a href="Protocols/XibedViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">XibedViewController</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Instantiable.html">Instantiable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Flow6ModuleP"></a>
+                    <a name="//apple_ref/swift/Protocol/Module" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Flow6ModuleP">Module</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines a contract that every <code>Module</code> must abide.</p>
+
+<p>A Module is used to provide an initial <code>UIViewController</code>
+for the module, as well an optional <code>UITabBarItem</code>.</p>
+
+<p>If provided, the <code>UITabBarItem</code> can be used in the App&rsquo;s
+UITabBar.</p>
+
+                        <a href="Protocols/Module.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Module</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-09-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
