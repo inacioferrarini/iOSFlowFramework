@@ -29,6 +29,7 @@
 		BBB3D224233CDBD40047B1FF /* TestStoryboarded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB3D219233CDBD40047B1FF /* TestStoryboarded.storyboard */; };
 		BBB3D225233CDBD40047B1FF /* TestStoryboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3D21A233CDBD40047B1FF /* TestStoryboarded.swift */; };
 		BBB3D226233CDBD40047B1FF /* TestXibedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBB3D21B233CDBD40047B1FF /* TestXibedViewController.xib */; };
+		BBBC154D233D648400467BD4 /* StringsSpec.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBBC154B233D648400467BD4 /* StringsSpec.strings */; };
 		BBD509212337E2E5009CA4EE /* Flow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD509172337E2E4009CA4EE /* Flow.framework */; };
 		BBD509282337E2E5009CA4EE /* Flow.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD5091A2337E2E4009CA4EE /* Flow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -78,6 +79,8 @@
 		BBB3D219233CDBD40047B1FF /* TestStoryboarded.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboarded.storyboard; sourceTree = "<group>"; };
 		BBB3D21A233CDBD40047B1FF /* TestStoryboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStoryboarded.swift; sourceTree = "<group>"; };
 		BBB3D21B233CDBD40047B1FF /* TestXibedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibedViewController.xib; sourceTree = "<group>"; };
+		BBBC154C233D648400467BD4 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
+		BBBC154E233D649200467BD4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
 		BBD509172337E2E4009CA4EE /* Flow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD5091A2337E2E4009CA4EE /* Flow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flow.h; sourceTree = "<group>"; };
 		BBD5091B2337E2E4009CA4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,6 +179,15 @@
 			path = Initialization;
 			sourceTree = "<group>";
 		};
+		BBBC1540233D63F500467BD4 /* TestResources */ = {
+			isa = PBXGroup;
+			children = (
+				BBBC154B233D648400467BD4 /* StringsSpec.strings */,
+			);
+			name = TestResources;
+			path = ../../Ness/NessTests/TestResources;
+			sourceTree = "<group>";
+		};
 		BBD5090D2337E2E4009CA4EE = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				BBB3D213233CDBD40047B1FF /* HelperClasses */,
+				BBBC1540233D63F500467BD4 /* TestResources */,
 				BBB3D20E233CDBD40047B1FF /* Initialization */,
 				BBD509272337E2E5009CA4EE /* Info.plist */,
 			);
@@ -294,6 +307,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				"en-US",
 			);
 			mainGroup = BBD5090D2337E2E4009CA4EE;
 			productRefGroup = BBD509182337E2E4009CA4EE /* Products */;
@@ -318,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBC154D233D648400467BD4 /* StringsSpec.strings in Resources */,
 				BBB3D224233CDBD40047B1FF /* TestStoryboarded.storyboard in Resources */,
 				BBB3D221233CDBD40047B1FF /* TestXibedView.xib in Resources */,
 				BBB3D226233CDBD40047B1FF /* TestXibedViewController.xib in Resources */,
@@ -385,6 +401,18 @@
 			targetProxy = BBD509222337E2E5009CA4EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBBC154B233D648400467BD4 /* StringsSpec.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBBC154C233D648400467BD4 /* en-US */,
+				BBBC154E233D649200467BD4 /* pt-BR */,
+			);
+			name = StringsSpec.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BBD509292337E2E5009CA4EE /* Debug */ = {
