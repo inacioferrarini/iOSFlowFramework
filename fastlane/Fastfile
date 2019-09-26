@@ -67,7 +67,6 @@ platform :ios do
     )
     ensure_git_status_clean
     add_git_tag(
-      grouping: "-",
       prefix: "v"
     )
     push_git_tags
