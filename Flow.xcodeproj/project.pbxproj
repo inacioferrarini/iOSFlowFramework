@@ -29,7 +29,6 @@
 		BBB3D224233CDBD40047B1FF /* TestStoryboarded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB3D219233CDBD40047B1FF /* TestStoryboarded.storyboard */; };
 		BBB3D225233CDBD40047B1FF /* TestStoryboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3D21A233CDBD40047B1FF /* TestStoryboarded.swift */; };
 		BBB3D226233CDBD40047B1FF /* TestXibedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBB3D21B233CDBD40047B1FF /* TestXibedViewController.xib */; };
-		BBBC154D233D648400467BD4 /* StringsSpec.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBBC154B233D648400467BD4 /* StringsSpec.strings */; };
 		BBD509212337E2E5009CA4EE /* Flow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD509172337E2E4009CA4EE /* Flow.framework */; };
 		BBD509282337E2E5009CA4EE /* Flow.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD5091A2337E2E4009CA4EE /* Flow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -79,8 +78,6 @@
 		BBB3D219233CDBD40047B1FF /* TestStoryboarded.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboarded.storyboard; sourceTree = "<group>"; };
 		BBB3D21A233CDBD40047B1FF /* TestStoryboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStoryboarded.swift; sourceTree = "<group>"; };
 		BBB3D21B233CDBD40047B1FF /* TestXibedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibedViewController.xib; sourceTree = "<group>"; };
-		BBBC154C233D648400467BD4 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
-		BBBC154E233D649200467BD4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
 		BBD509172337E2E4009CA4EE /* Flow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD5091A2337E2E4009CA4EE /* Flow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flow.h; sourceTree = "<group>"; };
 		BBD5091B2337E2E4009CA4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,15 +176,6 @@
 			path = Initialization;
 			sourceTree = "<group>";
 		};
-		BBBC1540233D63F500467BD4 /* TestResources */ = {
-			isa = PBXGroup;
-			children = (
-				BBBC154B233D648400467BD4 /* StringsSpec.strings */,
-			);
-			name = TestResources;
-			path = ../../Ness/NessTests/TestResources;
-			sourceTree = "<group>";
-		};
 		BBD5090D2337E2E4009CA4EE = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				BBB3D213233CDBD40047B1FF /* HelperClasses */,
-				BBBC1540233D63F500467BD4 /* TestResources */,
 				BBB3D20E233CDBD40047B1FF /* Initialization */,
 				BBD509272337E2E5009CA4EE /* Info.plist */,
 			);
@@ -333,7 +320,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBC154D233D648400467BD4 /* StringsSpec.strings in Resources */,
 				BBB3D224233CDBD40047B1FF /* TestStoryboarded.storyboard in Resources */,
 				BBB3D221233CDBD40047B1FF /* TestXibedView.xib in Resources */,
 				BBB3D226233CDBD40047B1FF /* TestXibedViewController.xib in Resources */,
@@ -402,18 +388,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		BBBC154B233D648400467BD4 /* StringsSpec.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBBC154C233D648400467BD4 /* en-US */,
-				BBBC154E233D649200467BD4 /* pt-BR */,
-			);
-			name = StringsSpec.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		BBD509292337E2E5009CA4EE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -466,13 +440,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -523,12 +498,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -546,7 +522,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Flow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,7 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inacioferrarini.Flow;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -571,7 +547,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Flow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,7 +556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inacioferrarini.Flow;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -603,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inacio.concrete.FlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -626,7 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.inacio.concrete.FlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
