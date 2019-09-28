@@ -11,7 +11,6 @@
 		BB58BF4E232E6AD000A13142 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; };
 		BB58BF52232E6BBC00A13142 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB58BF4C232E6AD000A13142 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB58BF53232E6BBC00A13142 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB58BF4B232E6AD000A13142 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BBADC91C2340079A009F50C5 /* StringsSpec.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBADC9192340079A009F50C5 /* StringsSpec.strings */; };
 		BBB3D207233CDBC70047B1FF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3D1FE233CDBC70047B1FF /* Coordinator.swift */; };
 		BBB3D208233CDBC70047B1FF /* XibedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3D200233CDBC70047B1FF /* XibedViewController.swift */; };
 		BBB3D209233CDBC70047B1FF /* XibedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB3D201233CDBC70047B1FF /* XibedView.swift */; };
@@ -61,8 +60,6 @@
 /* Begin PBXFileReference section */
 		BB58BF4B232E6AD000A13142 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		BB58BF4C232E6AD000A13142 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		BBADC91A2340079A009F50C5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
-		BBADC91B2340079A009F50C5 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/StringsSpec.strings"; sourceTree = "<group>"; };
 		BBB3D1FE233CDBC70047B1FF /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BBB3D200233CDBC70047B1FF /* XibedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedViewController.swift; sourceTree = "<group>"; };
 		BBB3D201233CDBC70047B1FF /* XibedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibedView.swift; sourceTree = "<group>"; };
@@ -116,14 +113,6 @@
 				BB58BF4B232E6AD000A13142 /* Quick.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BBADC9182340079A009F50C5 /* TestResources */ = {
-			isa = PBXGroup;
-			children = (
-				BBADC9192340079A009F50C5 /* StringsSpec.strings */,
-			);
-			path = TestResources;
 			sourceTree = "<group>";
 		};
 		BBB3D1FD233CDBC70047B1FF /* Coordinators */ = {
@@ -221,7 +210,6 @@
 		BBD509242337E2E5009CA4EE /* FlowTests */ = {
 			isa = PBXGroup;
 			children = (
-				BBADC9182340079A009F50C5 /* TestResources */,
 				BBB3D213233CDBD40047B1FF /* HelperClasses */,
 				BBB3D20E233CDBD40047B1FF /* Initialization */,
 				BBD509272337E2E5009CA4EE /* Info.plist */,
@@ -332,7 +320,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBADC91C2340079A009F50C5 /* StringsSpec.strings in Resources */,
 				BBB3D224233CDBD40047B1FF /* TestStoryboarded.storyboard in Resources */,
 				BBB3D221233CDBD40047B1FF /* TestXibedView.xib in Resources */,
 				BBB3D226233CDBD40047B1FF /* TestXibedViewController.xib in Resources */,
@@ -400,18 +387,6 @@
 			targetProxy = BBD509222337E2E5009CA4EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BBADC9192340079A009F50C5 /* StringsSpec.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBADC91A2340079A009F50C5 /* pt-BR */,
-				BBADC91B2340079A009F50C5 /* en-US */,
-			);
-			name = StringsSpec.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BBD509292337E2E5009CA4EE /* Debug */ = {
