@@ -24,7 +24,7 @@
 import UIKit
 import Flow
 
-class TestStoryboarded: UIViewController {
+class TestStoryboarded: UIViewController, Storyboarded {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -41,5 +41,3 @@ class TestStoryboarded: UIViewController {
     }
     
 }
-
-extension TestStoryboarded: Storyboarded {}
