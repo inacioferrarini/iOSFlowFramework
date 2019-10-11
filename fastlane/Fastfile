@@ -13,8 +13,8 @@ platform :ios do
   lane :generate_reports do
     scan
     xcov(
-      project: "Ness.xcodeproj",
-      scheme: "Ness",
+      project: "Flow.xcodeproj",
+      scheme: "Flow",
       output_directory: "coverage_report",
       only_project_targets: "true"
     )
@@ -27,10 +27,10 @@ platform :ios do
     )
     ensure_git_status_clean
     increment_build_number(
-      xcodeproj: "Ness.xcodeproj"
+      xcodeproj: "Flow.xcodeproj"
     )
     increment_version_number(
-      xcodeproj: "Ness.xcodeproj"
+      xcodeproj: "Flow.xcodeproj"
     )
     generate_docs
     generate_reports
@@ -42,7 +42,7 @@ platform :ios do
     push_to_git_remote
     create_pull_request(
       api_token: ENV["GITHUB_API_TOKEN"],
-      repo: "inacioferrarini/iOSNessFramework",
+      repo: "inacioferrarini/iOSFlowFramework",
       title: "New Version"
     )
   end
@@ -54,7 +54,7 @@ platform :ios do
     )
     ensure_git_status_clean
     version = get_version_number(
-      xcodeproj: "Ness.xcodeproj"
+      xcodeproj: "Flow.xcodeproj"
     )
     add_git_tag(
       tag: "v#{version}"
