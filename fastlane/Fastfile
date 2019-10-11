@@ -3,6 +3,7 @@ fastlane_require 'dotenv'
 default_platform(:ios)
 
 platform :ios do
+
   desc "Generates documentation"
   lane :generate_docs do
     jazzy
@@ -40,6 +41,7 @@ platform :ios do
     )
     push_to_git_remote
     create_pull_request(
+      api_token: ENV["GITHUB_API_TOKEN"],
       repo: "inacioferrarini/iOSFlowFramework",
       title: "New Version"
     )
@@ -51,8 +53,11 @@ platform :ios do
       branch: 'master'
     )
     ensure_git_status_clean
+    version = get_version_number(
+      xcodeproj: "Flow.xcodeproj"
+    )
     add_git_tag(
-      prefix: "v"
+      tag: "v#{version}"
     )
     push_git_tags
   end
