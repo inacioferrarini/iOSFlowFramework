@@ -18,7 +18,7 @@ Flow can be used seamesly with other frameworks, like (Ness)[https://github.com/
 ## Requirements
 
 - iOS 9.0+
-- Xcode 10.0+
+- Xcode 10.3+
 
 ## Usage
 
